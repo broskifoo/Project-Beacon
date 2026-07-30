@@ -1,7 +1,7 @@
 # Project Beacon
 
 <div align="center">
-  <img src="assets/logo-placeholder.png" alt="Project Beacon Logo" width="200" height="200" />
+  <img src="assets/logo.jpg" alt="Project Beacon Logo" width="200" height="200" />
 
   **Empowering Disaster-Resilient Mobile Communications & Coordination**
 
