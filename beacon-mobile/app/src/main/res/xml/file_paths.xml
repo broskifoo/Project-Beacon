@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <files-path name="beacon_files" path="." />
+    <cache-path name="beacon_cache" path="." />
+    <external-files-path name="beacon_external" path="." />
+    <external-cache-path name="beacon_external_cache" path="." />
+    <external-media-path name="beacon_media" path="." />
+</paths>

@@ -1,0 +1,51 @@
+[package]
+name = "beacon-mesh-engine"
+version = "0.1.0-alpha"
+edition = "2021"
+description = "Project Beacon mesh routing engine"
+license = "MIT"
+repository = "https://github.com/broskifoo/Project-Beacon"
+
+[dependencies]
+# Core dependencies
+beacon-core = { path = "../../../beacon-core/rust/core-lib" }
+beacon-protocol = { path = "../../../beacon-protocol/rust" }
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+cbor4ii = { version = "0.3", features = ["derive", "std"] }
+postcard = "1.0"
+
+# Crypto
+chacha20poly1305 = "0.10"
+x25519-dalek = "2.0"
+ed25519-dalek = "2.0"
+hkdf = "0.12"
+rand = { version = "0.8", features = ["std"] }
+zeroize = { version = "1.6", features = ["pin"] }
+
+# Data structures
+uuid = { version = "1.6", features = ["v7", "serde", "std"] }
+indexmap = "2.0"
+smallvec = "1.10"
+
+# Async
+tokio = { version = "1.35", features = ["rt-multi-thread", "macros", "sync", "time"] }
+futures = "0.3"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# Config
+config = "0.13"
+toml = "0.8"
+
+[dev-dependencies]
+proptest = "1.0"
+criterion = "0.5"
+
+[[bench]]
+name = "routing_bench"
+harness = false

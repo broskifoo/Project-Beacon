@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Beacon</string>
+    <string name="app_name_short">Beacon</string>
+    
+    <!-- Permissions rationale -->
+    <string name="permission_bluetooth_rationale">Beacon needs Bluetooth to discover and communicate with nearby peers without Internet.</string>
+    <string name="permission_location_rationale">Beacon needs location access for Bluetooth scanning (Android requirement) and to share your location in emergencies.</string>
+    <string name="permission_notification_rationale">Beacon needs notifications to alert you of incoming messages, SOS signals, and emergency broadcasts.</string>
+    <string name="permission_nearby_wifi_rationale">Beacon needs nearby Wi-Fi access for Wi-Fi Direct high-bandwidth transfers.</string>
+
+    <!-- SOS -->
+    <string name="sos_button_content_desc">Send emergency SOS</string>
+    <string name="sos_confirmation_title">Send Emergency SOS?</string>
+    <string name="sos_confirmation_message">This will broadcast your location to all nearby Beacon nodes and rescue teams.\n\nIncludes: GPS location, battery level, your ID</string>
+    <string name="sos_cancel">Cancel</string>
+    <string name="sos_send">SEND SOS</string>
+    <string name="sos_sent">SOS transmitted - awaiting acknowledgment</string>
+    <string name="sos_cancel_retry">Cancel Retry</string>
+
+    <!-- Settings -->
+    <string name="settings_network">Network</string>
+    <string name="settings_power">Power Management</string>
+    <string name="settings_security">Security</string>
+    <string name="settings_maps">Maps</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_about">About</string>
+
+    <!-- Network -->
+    <string name="setting_ble">Bluetooth Low Energy</string>
+    <string name="setting_ble_desc">Primary discovery & messaging transport</string>
+    <string name="setting_wifi">Wi-Fi Direct</string>
+    <string name="setting_wifi_desc">High-bandwidth transfers</string>
+    <string name="setting_lora">LoRa (External Radio)</string>
+    <string name="setting_lora_desc">Long-range communication</string>
+
+    <!-- Power -->
+    <string name="setting_power_mode">Power Mode</string>
+    <string name="setting_battery">Battery Level</string>
+    <string name="setting_encrypt_storage">Encrypt Storage</string>
+    <string name="setting_encrypt_storage_desc">AES-256 encryption for all local data</string>
+
+    <!-- Security -->
+    <string name="setting_auto_rotate_keys">Auto-rotate Identity Keys</string>
+    <string name="setting_auto_rotate_keys_desc">Generate new keys every 90 days</string>
+    <string name="setting_view_fingerprint">View Identity Fingerprint</string>
+    <string name="setting_view_fingerprint_desc">Verify with contacts out-of-band</string>
+    <string name="setting_trusted_peers">Trusted Peers</string>
+    <string name="setting_trusted_peers_desc">Manage peer trust relationships</string>
+
+    <!-- Notifications -->
+    <string name="setting_notify_sos">SOS Alerts</string>
+    <string name="setting_notify_sos_desc">Always notify for emergencies</string>
+    <string name="setting_notify_high">High Priority Messages</string>
+    <string name="setting_notify_high_desc">Urgent messages</string>
+    <string name="setting_notify_normal">Normal Priority Messages</string>
+    <string name="setting_notify_normal_desc">Regular messages</string>
+
+    <!-- About -->
+    <string name="setting_version">Version</string>
+    <string name="setting_build_date">Build Date</string>
+    <string name="setting_license">License</string>
+    <string name="setting_report_issue">Report Issue</string>
+
+    <!-- Placeholders -->
+    <string name="map_placeholder">Offline Map View\nMapLibre integration pending</string>
+    <string name="messages_empty">No messages yet\nMessages from peers will appear here</string>
+    <string name="network_empty">No peers discovered\nEnsure Bluetooth & Location are enabled</string>
+    <string name="resources_empty">No resources reported\nCommunity resources will appear here</string>
+    <string name="alerts_empty">No active alerts\nEmergency broadcasts will appear here</string>
+</resources>

@@ -10,6 +10,7 @@ on:
       - 'README.md'
       - 'CONTRIBUTING.md'
       - '.github/workflows/docs.yml'
+      - 'mkdocs.yml'
   pull_request:
     branches:
       - main
@@ -19,6 +20,12 @@ on:
       - 'README.md'
       - 'CONTRIBUTING.md'
       - '.github/workflows/docs.yml'
+      - 'mkdocs.yml'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   lint-docs:
@@ -35,6 +42,7 @@ jobs:
             docs/**/*.md
             adr/**/*.md
             *.md
+          config: .markdownlint.json
 
       - name: Verify Link Integrity
         uses: lycheeverse/lychee-action@v1.9.0
@@ -50,19 +58,36 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-size: '3.x'
+          python-version: '3.x'
 
       - name: Install Documentation Tools
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs-material mkdocs-mermaid2-plugin
+          pip install mkdocs-material mkdocs-mermaid2-plugin mkdocs-git-revision-date-localized-plugin mkdocs-minify-plugin pymdown-extensions
 
       - name: Build MkDocs Site
-        run: |
-          # Placeholder configuration check (or build mock site)
-          echo "Building MkDocs documentation site..."
-          # mkdocs build --strict
+        run: mkdocs build --strict
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy-docs:
+    name: Deploy to GitHub Pages
+    needs: build-docs
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
