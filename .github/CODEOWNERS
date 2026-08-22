@@ -1,0 +1,26 @@
+# CODEOWNERS File
+# This file defines individuals or teams that are responsible for reviewing changes in specific folders.
+# Order is important; the last matching pattern takes precedence.
+
+# Global owners (catch-all)
+*                       @broskifoo @project-beacon/core-maintainers
+
+# Hardware and Radio Drivers
+/beacon-hardware/       @project-beacon/hardware-team
+/beacon-radio/          @project-beacon/radio-firmware-team
+/docs/hardware/         @project-beacon/hardware-team @project-beacon/writers
+
+# Routing and Mesh Protocols
+/beacon-mesh/           @project-beacon/mesh-protocol-team
+/docs/protocol/         @project-beacon/mesh-protocol-team @project-beacon/writers
+
+# User Interface and Dashboards
+/beacon-dashboard/      @project-beacon/ui-ux-team
+/docs/ui-ux/            @project-beacon/ui-ux-team @project-beacon/writers
+
+# Simulation Harnesses
+/beacon-simulator/      @project-beacon/qa-simulation-team
+
+# Documentation and Specifications
+/docs/                  @project-beacon/writers
+/adr/                   @project-beacon/core-maintainers

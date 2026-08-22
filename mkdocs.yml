@@ -1,0 +1,102 @@
+site_name: Project Beacon
+site_description: Open-source disaster-resilient mobile communications platform
+site_author: Project Beacon Contributors
+site_url: https://projectbeacon.org
+repo_url: https://github.com/broskifoo/Project-Beacon
+repo_name: Project-Beacon
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+
+nav:
+  - Home: index.md
+  - Vision: vision/vision.md
+  - Roadmap: ROADMAP.md
+  - Project Status: PROJECT_STATUS.md
+  - Architecture:
+    - Overview: architecture/architecture.md
+    - Protocol: protocol/protocol.md
+    - Security: security/security.md
+  - Requirements:
+    - PRD: prd/prd.md
+    - SRS: srs/srs.md
+  - Hardware:
+    - Specification: hardware/hardware.md
+    - UI/UX: ui-ux/ui-ux.md
+  - Development:
+    - SDK: sdk/sdk.md
+    - Testing: testing/testing.md
+    - ADRs: adr/index.md
+  - Contributing: CONTRIBUTING.md
+  - Code of Conduct: CODE_OF_CONDUCT.md
+  - License: LICENSE
+
+plugins:
+  - search
+  - mermaid2
+  - git-revision-date-localized:
+      enabled: true
+      type: date
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - footnotes
+  - tables
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/broskifoo/Project-Beacon
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/projectbeacon
+  generator: false
+
+copyright: |
+  &copy; 2026 Project Beacon Contributors
+  Licensed under the MIT License

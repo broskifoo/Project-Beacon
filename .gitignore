@@ -7,3 +7,27 @@ dist/
 bin/
 .DS_Store
 *.log
+
+# OS files
+Thumbs.db
+desktop.ini
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Build and local files
+build/
+out/
+obj/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/

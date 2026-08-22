@@ -1,0 +1,9 @@
+# GitHub Funding Configuration
+# Use this to configure funding links for Project Beacon.
+
+github: [broskifoo, "project-beacon-org"]
+patreon: projectbeacon
+open_collective: project-beacon
+ko_fi: projectbeacon
+tidelift: npm/project-beacon-sdk
+custom: ["https://projectbeacon.org/donate"]
