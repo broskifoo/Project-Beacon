@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - *Placeholder: Add newly introduced features/changes here prior to release tag.*
 
+### Removed
+- Accidentally committed OpenCluely Electron app files (AI interview assistant by TechyCSR) from wrong working directory
+- 65 files including package.json, Electron main/preload, UI windows (chat, onboarding, settings, LLM response), speech recognition, prompt loader, skill prompts, markdown lib, assets, env template, full src tree, webapp, and build scripts
+
 ---
 
 ## [0.1.0-alpha] - 2026-07-31
