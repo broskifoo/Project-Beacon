@@ -81,13 +81,15 @@ The following high-level milestones outline the strategic plan for Project Beaco
 
 ## Documentation
 
-Detailed specifications and templates are located in the [docs/](docs/) and [adr/](adr/) directories:
+Detailed specifications are located in the [docs/](docs/) and [adr/](adr/) directories (templates also provided):
 
-- **Vision & Strategy:** [Vision Document](docs/vision/vision_template.md) | [Roadmap](ROADMAP.md)
-- **Requirements:** [Product Requirements Document (PRD)](docs/prd/prd_template.md) | [Software Requirements Spec (SRS)](docs/srs/srs_template.md)
-- **Technical Specs:** [Architecture Overview](docs/architecture/architecture_template.md) | [Protocol Specification](docs/protocol/protocol_template.md) | [Security Specification](docs/security/security_template.md)
-- **Hardware & UX:** [Hardware Specification](docs/hardware/hardware_template.md) | [UI/UX Specification](docs/ui-ux/ui-ux_template.md)
-- **Developers:** [SDK Specification](docs/sdk/sdk_template.md) | [Testing Strategy](docs/testing/testing_template.md) | [ADR Index](adr/ADR-0000-template.md)
+- **Vision & Strategy:** [Vision Document](docs/vision/vision.md) | [Roadmap](ROADMAP.md)
+- **Requirements:** [Product Requirements Document (PRD)](docs/prd/prd.md) | [Software Requirements Spec (SRS)](docs/srs/srs.md)
+- **Technical Specs:** [Architecture Overview](docs/architecture/architecture.md) | [Protocol Specification](docs/protocol/protocol.md) | [Security Specification](docs/security/security.md)
+- **Hardware & UX:** [Hardware Specification](docs/hardware/hardware.md) | [UI/UX Specification](docs/ui-ux/ui-ux.md)
+- **Developers:** [SDK Specification](docs/sdk/sdk.md) | [Testing Strategy](docs/testing/testing.md) | [ADR Index](adr/index.md)
+
+Templates (for reference/contributions): [Vision](docs/vision/vision_template.md) | [PRD](docs/prd/prd_template.md) | [SRS](docs/srs/srs_template.md) | [Architecture](docs/architecture/architecture_template.md) | [Protocol](docs/protocol/protocol_template.md) | [Security](docs/security/security_template.md) | [Hardware](docs/hardware/hardware_template.md) | [UI/UX](docs/ui-ux/ui-ux_template.md) | [SDK](docs/sdk/sdk_template.md) | [Testing](docs/testing/testing_template.md) | [ADR](adr/ADR-0000-template.md)
 
 ---
 
